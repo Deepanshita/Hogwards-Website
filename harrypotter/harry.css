@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+@font-face {
+    font-family: harrypotter;
+    src: url(harrypotter.ttf);
+}
+@font-face {
+    font-family: mainharry;
+    src: url(mainharry.TTF);
+}
+@font-face {
+    font-family: terra;
+    src: url(Terra.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+#header{
+     min-height: 100vh;
+     background: linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url(hogwards.jpg) center/cover fixed;
+     font-family: 'harrypotter';
+     position: relative;
+}
+.banner{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner h1{
+    font-family: 'mainharry';
+    color: rgb(252, 252, 252);
+    text-shadow: -3px 4px 2px rgba(51,127,238,0.53);
+    font-size: 70px;
+    /*animation*/
+}
+.banner h3{
+   font-family: 'harrypotter';
+   color: azure;
+   margin-top: 1rem;
+   margin-bottom: 2.5rem;
+}
+.btn{
+    text-transform: uppercase;
+    color: aliceblue;
+    border: 1mm double rgba(51,127,238,0.53);
+    padding: 0.2rem 3rem;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 0px 20px 6px rgba(107, 81, 202, 0.75);
+}
+.btn:hover{
+    background-color:#800020;
+    color: goldenrod;
+    box-shadow: none;
+    border: goldenrod;
+}
+.houses{
+    background: rgb(2,0,36);
+    background: linear-gradient(to top, rgb(3, 1, 48) 15%, rgb(17, 32, 91) 79%, rgb(26, 47, 76) 100%);
+}
+.house{
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: all 0.3 linear;
+}   
+.house_logo img{
+   max-height: 145px;
+   max-width: 10rem;
+   margin-bottom: 1rem;
+   transition: all 0.4 linear;
+}    
+.house_text{
+    color: aliceblue;
+    max-width: 17rem;
+    font-family:'terra';
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+.house h4{
+    font-family:'mainharry';
+    font-size: 3rem;
+    font-weight: 200;
+    color: goldenrod;
+}
+.slyhouse:hover{
+    background-color:rgb(31, 90, 31);
+    box-shadow: 0 5px 30px 8px silver;
+}
+.huffhouse:hover{
+    background-color: rgb(144, 149, 41);
+    box-shadow: 0 5px 30px 8px black;
+}
+.ravenhouse:hover{
+    background-color:#3f301d;
+    box-shadow: 0 5px 30px 8px rgb(17, 32, 91);
+}
+.gryhouse:hover{
+    background-color:#800020;
+    box-shadow: 0 5px 30px 8px goldenrod;
+}
+.house:hover h4{
+    transform: translateY(-5px);
+}
+
+@keyframes changeContent {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      content: url('hat1_2-transformed.png');
+    }
+  }
+  span:hover{
+    animation-fill-mode: forwards;
+    animation: changeContent 1.5s linear forwards;
+  }
+  
+.steam {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    width: 200px;
+}
+
+svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: blur(25px);
+    overflow: visible;
+}
+
+
+.steam-cloud {
+    fill: none;
+    overflow: visible;
+    stroke:cyan;
+    stroke-width: 42;
+    stroke-linecap: round;
+}
+
+.cloud-1 {
+    stroke:cyan;
+    opacity: 100%;
+    stroke-dasharray: 284;
+    stroke-dashoffset: 0;
+    animation: steamCloud 4s ease-out 400ms infinite;
+}
+
+.cloud-2 {
+    stroke:cyan;
+    opacity: 100%;
+    stroke-dasharray: 284;
+    stroke-dashoffset: 0;
+    animation: steamCloud 6s ease-out 400ms infinite;
+}
+
+.cloud-3 {
+    stroke: cyan;
+    opacity: 100%;
+    stroke-dasharray: 284;
+    stroke-dashoffset: 0;
+    animation: steamCloud 5s ease-out 400ms infinite;
+}
+@keyframes steamCloud {
+
+    0% {
+        stroke-dashoffset: 60;
+        opacity: 0%;
+    }
+
+    30% {
+        stroke-dashoffset: 284;
+        opacity: 70%;
+        }
+
+    80% {
+        stroke-dashoffset: 568;
+        opacity: 40%;
+            }
+
+    100% {
+        stroke-dashoffset: 568;
+        opacity: 0;
+        }
+} 
+.cup_animation{
+    position: absolute;
+    left:230px;
+    top: 0;
+}
+.page3{
+    background: rgb(2,0,36);
+    background: linear-gradient(to right, rgb(3, 1, 27) 30%, rgb(82, 100, 172) 20%, rgb(3, 11, 22) 50%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.cup_size{
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+.cup_img{
+    position: absolute;
+    top: 1px;
+    left: 80px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.cup_about{
+  color: aliceblue;
+  text-align: center;
+  max-width: 35rem;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+.gof>h3{
+  font-family: 'mainharry';
+  font-size: 100px;
+  color: linen;
+  text-shadow: 5px 6px 4px rgba(51,127,238,0.53);
+  margin-bottom: 20px;
+}
+.gof>p{
+    font-family: 'Lusitana';
+    font-style: italic;
+}
+.dem img{
+    width: 70px;
+    animation: deme 7s linear infinite;
+    z-index: 99;
+}
+@keyframes deme {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translatey(-80vh);
+        opacity: 0;
+    }
+}
+.dem img:nth-child(1){
+    animation-delay:2s ;
+}
+.dem img:nth-child(2){
+    animation-delay: 1s;
+}
+.dem img:nth-child(3){
+    animation-delay:4.4s ;
+}
+.dem img:nth-child(4){
+    animation-delay: 3s;
+}
+.dem img:nth-child(5){
+    animation-delay:6s ;
+}
+.dem img:nth-child(6){
+    animation-delay:5.5s ;
+}
+.pdem{
+    position: relative;
+    height: 90vh;
+    background: #3d6066;
+
+}
+.dem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;   
+   
+}
+.teachers{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9999;
+}
+.teachers img{
+    width: 500px;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+.teachers h3{
+    font-size: 10vw;
+    font-family: "mainharry";
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    text-shadow: 5px 6px 4px rgba(70, 142, 243, 0.53);
+}
+.teachers p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    opacity: 0;
+    animation-name: tech;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 225px;
+    max-width: 20rem;
+    left: 55px;
+}
+@keyframes tech {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        color: black;
+    }
+}
+.loader{
+    background: url('loadergif.gif') center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    z-index: 999;
+    animation-name: load;
+    animation-duration: 4s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+.owlgif{
+    height: 100px;
+    animation-name: loading;
+    animation-duration: 3.6s;
+}
+@keyframes load {
+    0%{
+        top: 0;
+    }
+    60%{
+        top: 0;
+    }
+    100%{
+        top: -100%;
+    }
+
+}   
+@keyframes loading {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(4);
+    }
+    100%{
+        transform: scale(6)
+    }
+}
+
